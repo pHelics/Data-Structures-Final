@@ -11,15 +11,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DecisionTree.h" />
     <ClInclude Include="dynamicArray.h" />
+    <ClInclude Include="ID3.h" />
+    <ClInclude Include="ID3DataEntry.h" />
     <ClInclude Include="mushroom.h" />
     <ClInclude Include="classifier.h" />
+    <ClInclude Include="TestEntry.h" />
     <ClInclude Include="timerSystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classifier.cpp" />
+    <ClCompile Include="DecisionTree.cpp" />
+    <ClCompile Include="ID3.cpp" />
     <ClCompile Include="mushroom.cpp" />
-    <ClCompile Include="pa6.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="timerSystem.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

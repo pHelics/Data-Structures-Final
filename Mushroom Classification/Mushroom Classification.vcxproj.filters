@@ -27,11 +27,20 @@
     <ClInclude Include="timerSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DecisionTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ID3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ID3DataEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pa6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mushroom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -39,6 +48,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="timerSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecisionTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ID3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

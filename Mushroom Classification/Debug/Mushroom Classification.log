@@ -1,21 +1,19 @@
-﻿Build started 4/8/2014 4:14:39 PM.
-     1>Project "I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Mushroom Classification\Mushroom Classification.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/9/2014 11:51:31 PM.
+     1>Project "C:\Users\David\Documents\GitHub\Data-Structures-Final\Mushroom Classification\Mushroom Classification.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt classifier.cpp mushroom.cpp pa6.cpp timerSystem.cpp
-         timerSystem.cpp
-         pa6.cpp
-         mushroom.cpp
-         classifier.cpp
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ID3.cpp
+         ID3.cpp
+     1>c:\users\david\documents\github\data-structures-final\mushroom classification\id3.cpp(58): warning C4101: 'l' : unreferenced local variable
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Debug\Mushroom Classification.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Debug\Mushroom Classification.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Debug\Mushroom Classification.lib" /MACHINE:X86 Debug\classifier.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\David\Documents\GitHub\Data-Structures-Final\Debug\Mushroom Classification.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\David\Documents\GitHub\Data-Structures-Final\Debug\Mushroom Classification.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\David\Documents\GitHub\Data-Structures-Final\Debug\Mushroom Classification.lib" /MACHINE:X86 Debug\classifier.obj
+         Debug\DecisionTree.obj
+         Debug\ID3.obj
          Debug\mushroom.obj
-         Debug\pa6.obj
+         Debug\main.obj
          Debug\timerSystem.obj
-         LINK : I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Debug\Mushroom Classification.exe not found or not built by the last incremental link; performing full link
-         Mushroom Classification.vcxproj -> I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Debug\Mushroom Classification.exe
-     1>Done Building Project "I:\David Homework\Freshman Simester 2\Data Structures\Final Project\Mushroom Classification\Mushroom Classification.vcxproj" (Build target(s)).
+         Mushroom Classification.vcxproj -> C:\Users\David\Documents\GitHub\Data-Structures-Final\Debug\Mushroom Classification.exe
+     1>Done Building Project "C:\Users\David\Documents\GitHub\Data-Structures-Final\Mushroom Classification\Mushroom Classification.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:07.61
+Time Elapsed 00:00:01.90

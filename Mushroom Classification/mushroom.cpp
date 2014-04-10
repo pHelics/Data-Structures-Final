@@ -46,6 +46,11 @@ bool Mushroom::isEdible()
 	return mEdible;
 }
 
+bool Mushroom::getState()
+{
+	return mEdible;
+}
+
 
 /*      Pre:  The given key is valid
  *     Post:  The integer value is stored in the key index

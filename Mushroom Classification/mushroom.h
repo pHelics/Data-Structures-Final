@@ -15,20 +15,22 @@
 #ifndef MUSHROOM_H
 #define MUSHROOM_H
 
+#include "ID3DataEntry.h"
 #include <string>
 using namespace std;
 
 const int NUM_ATTRIBUTES = 22;
 
 
-class Mushroom
+class Mushroom: public ID3DataEntry
 {
 public:
 	Mushroom();
 	Mushroom(bool edible, int attributes[]);
-
-	int getAttribute(int key);
+	
 	bool isEdible();
+	virtual int getAttribute(int key);
+	virtual bool getState();
 
 	void setAttribute(int key, int value);
 	void setEdible(bool edible);
