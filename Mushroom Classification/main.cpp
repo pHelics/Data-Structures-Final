@@ -10,95 +10,42 @@
      *     I certify that this assignment is entirely my own work.
      **********************************************************************/
 
-#include "classifier.h"
-#include "timerSystem.h"
-#include "TestEntry.h"
-#include "ID3.h"
+#include "mushroomLoader.h"
+#include "id3Algorithm.h"
 #include <fstream>
 #include <iostream>
 using namespace std;
 
 
-void testAlgorithm()
-{
-	/////////////////////////////////////
-	// Testing Purposes:
-	// Using the Example dataset from the ID3 pdf.
-
-	ifstream file("testData.txt");
-	ID3 algorithm(3);
-	algorithm.setNumAttributeValues(0, 2);
-	algorithm.setNumAttributeValues(1, 3);
-	algorithm.setNumAttributeValues(2, 2);
-
-	if (file.good())
-	{
-		string datastr;
-		int i, state, temp;
-		TestEntry* entry;
-
-		while (!file.eof())
-		{
-			file >> state;
-			entry = new TestEntry(state == 1);
-
-			for (i = 0; i < 3; i++)
-			{
-				file >> temp;
-				entry->setAttribute(i, temp);
-			}
-
-			algorithm.addData(entry);
-		}
-	}
-	file.close();
-
-	// Run the ID3 algorithm, creating the decision tree
-	algorithm.generate();
-	
-	//////////////////////////////////////
-}
-
 void main() 
 {
-	// Test the ID3 Algorithm.
-	// Feel free to comment this out.
-	testAlgorithm();
 
+	//// TESTING PURPOSES ////
+	MushroomLoader loader;
+	ID3Algorithm algorithm(NUM_ATTRIBUTES);
 
+	// Load the mushroom dataset into the algorithm.
+	cout << "Loading Dataset.\n";
+	loader.loadMushroomSetIntoID3(algorithm, "dataset.txt");
 
-	// OLD CODE from PA 6:
-	/*
-	TimerSystem timer;
-	timer.startClock();
-	
-	Classifier classifier;
-	classifier.loadDataset("dataset.txt");
-	
-	ifstream file(argv[1]);
-	
-	if (file.good())
-	{
-		int kValue;
-		string mushroomData;
-		file >> kValue;
-		getline(file, mushroomData);
-		getline(file, mushroomData);
+	// Run the algorithm, generating the decision tree.
+	cout << "Creating Decision Tree.\n\n";
+	algorithm.generate();
+	algorithm.getDecisionTree().display();
 
-		cout << "Classifying mushroom from the file \"" << argv[1] << "\"\n";
-		Mushroom *test = classifier.parseTestMushroom(mushroomData);
-		bool edible    = classifier.classify(test, kValue);
-		double time    = timer.getTime();
-		cout << "The Mushroom is " << (edible ? "edible" : "poisonous") << ".\n";
-		cout << "Took " << time << " seconds.\n";
-		
-		delete test;
-	}
+	// Save the decision tree to a file.
+	cout << "\nSaving decision tree to file.\n";
+	algorithm.getDecisionTree().save("treeData.txt");
+
+	// Classify a test mushroom.
+	Mushroom *test = loader.loadMushroom("input1.txt", false);
+	if (algorithm.getDecisionTree().classify(test))
+		cout << "Test = Edible\n";
 	else
-		cout << "The file \"" << argv[1] << "\"does not exist.\n";
-	
-	file.close();
-	*/
+		cout << "Test = Poisonous\n";
+	delete test;
+	///////////////////////////
+
 
 
 	cout << "\n\n";

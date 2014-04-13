@@ -5,8 +5,9 @@
 class ID3DataEntry
 {
 public:
-	virtual bool getState() = 0;
-	virtual int getAttribute(int index) = 0;
+	virtual bool getState()              = 0;
+	virtual int getAttribute(int index)  = 0;
+	virtual void setState(bool newState) = 0;
 };
 
 #endif

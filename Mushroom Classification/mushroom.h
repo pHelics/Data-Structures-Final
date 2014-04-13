@@ -15,7 +15,7 @@
 #ifndef MUSHROOM_H
 #define MUSHROOM_H
 
-#include "ID3DataEntry.h"
+#include "id3DataEntry.h"
 #include <string>
 using namespace std;
 
@@ -34,6 +34,7 @@ public:
 
 	void setAttribute(int key, int value);
 	void setEdible(bool edible);
+	virtual void setState(bool newState);
 
 private:
 	int mAttributes[NUM_ATTRIBUTES];

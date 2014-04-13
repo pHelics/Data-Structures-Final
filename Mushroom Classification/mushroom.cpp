@@ -69,3 +69,9 @@ void Mushroom::setEdible(bool edible)
 {
 	mEdible = edible;
 }
+
+
+void Mushroom::setState(bool newState)
+{
+	mEdible = newState;
+}

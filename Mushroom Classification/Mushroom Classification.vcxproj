@@ -11,22 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DecisionTree.h" />
+    <ClInclude Include="decisionTree.h" />
     <ClInclude Include="dynamicArray.h" />
-    <ClInclude Include="ID3.h" />
-    <ClInclude Include="ID3DataEntry.h" />
+    <ClInclude Include="id3Algorithm.h" />
+    <ClInclude Include="id3DataEntry.h" />
     <ClInclude Include="mushroom.h" />
-    <ClInclude Include="classifier.h" />
-    <ClInclude Include="TestEntry.h" />
-    <ClInclude Include="timerSystem.h" />
+    <ClInclude Include="mushroomLoader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="classifier.cpp" />
-    <ClCompile Include="DecisionTree.cpp" />
-    <ClCompile Include="ID3.cpp" />
+    <ClCompile Include="decisionTree.cpp" />
+    <ClCompile Include="id3Algorithm.cpp" />
     <ClCompile Include="mushroom.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="timerSystem.cpp" />
+    <ClCompile Include="mushroomLoader.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{63255CEF-7BE2-4E60-A143-02FFFF21B0F5}</ProjectGuid>

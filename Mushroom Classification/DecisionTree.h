@@ -5,13 +5,14 @@
 
 #include <Windows.h>
 #include <string>
+#include "ID3DataEntry.h"
 using namespace std;
 
 class ID3;
 
 class DecisionTree
 {
-	friend class ID3;
+	friend class ID3Algorithm;
 private:
 	struct Node
 	{
@@ -26,27 +27,13 @@ private:
 			mSibling  = NULL;
 			mChild    = NULL;
 		}
-
-		Node(int data)
-		{
-			mData     = data;
-			mDecision = 0;
-			mSibling  = NULL;
-			mChild    = NULL;
-		}
-			
-		Node(int data, Node *sibling, Node *child)
-		{
-			mData     = data;
-			mDecision = 0;
-			mSibling  = sibling;
-			mChild    = child;
-		}
 	};
 
 	Node* mRootNode;
 
 	void displaySubtree(Node *node, string tab);
+	void loadBranch(ifstream &file, Node *branch);
+	void saveBranch(ofstream &file, Node *branch);
 	
 public:
 	
@@ -56,6 +43,10 @@ public:
 	void destroySubtree(Node *node);
 
 	void display();
+	
+	bool classify(ID3DataEntry *object);
+	void save(string filename);
+	void load(string filename);
 	
 };
 

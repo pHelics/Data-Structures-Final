@@ -18,25 +18,19 @@
     <ClInclude Include="mushroom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="classifier.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="dynamicArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="timerSystem.h">
+    <ClInclude Include="mushroomLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DecisionTree.h">
+    <ClInclude Include="id3Algorithm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ID3.h">
+    <ClInclude Include="decisionTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ID3DataEntry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TestEntry.h">
+    <ClInclude Include="id3DataEntry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,19 +38,16 @@
     <ClCompile Include="mushroom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="classifier.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="timerSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DecisionTree.cpp">
+    <ClCompile Include="mushroomLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ID3.cpp">
+    <ClCompile Include="id3Algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decisionTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
